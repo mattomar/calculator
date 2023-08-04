@@ -57,7 +57,7 @@ button.equal {
     overflow-x: hidden;
     font-size: 20px;
     padding: 5px;
-    font-family: "pix", sans-serif;
+    font-family: 'pix', sans-serif;
 
 
 }
@@ -65,7 +65,7 @@ button.equal {
 
 
 h1{
-    font-family: "pix", sans-serif;
+    font-family: 'pix', sans-serif;
     size: 30px;
     display: flex;
     justify-content: center;
@@ -73,7 +73,7 @@ h1{
 }
 
 @font-face {
-    font-family: "pix";
-    src: url("/summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf") format('truetype');
+    font-family: pix;
+    src: url("summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf") format('truetype');
 
 }
