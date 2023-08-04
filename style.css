@@ -1,13 +1,11 @@
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     margin: 0;
-  }
+    background-color: #e2e7e5;
+}
 
-  .claculator {
+.claculator {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -15,37 +13,41 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 250px;
-  }
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+}
 
-  button {
+button {
     padding: 10px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+}
 
-    
-  }
+button:hover,
+.operator:hover {
+    background-color: #222;
+    /* Darker background color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-  button:hover,
-  .operator:hover {
-    background-color: #f9f9f9; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
-  }
+button.operator, .clear {
+    background-color: #444;
+    /* Darker background color for operators */
+}
 
-  button.operator {
-    background-color: #f1f1f1;
-  }
-
-  button.equal {
+button.equal {
     background-color: #66cc66;
     color: #fff;
-  }
+}
 
-  .output{
-    background-color: #66cc66;
+.output {
+    background-color: #5b663d;
+    /* Darker background color for the display */
     grid-column: 1 / -1;
-    min-height:  50px;
+    min-height: 50px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -53,4 +55,24 @@ body {
     max-width: 250px;
     flex-grow: 0;
     overflow-x: hidden;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "pix", sans-serif;
+
+
+}
+
+@font-face {
+    font-family: 'pix';
+
+    src: url(/summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf) format('truetype');
+
+}
+
+h1{
+    font-family: "pix", sans-serif;
+    size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
 }
