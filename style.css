@@ -1,1 +1,56 @@
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .claculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+  }
+
+  button:hover,
+  .operator:hover {
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  }
+
+  button.operator {
+    background-color: #f1f1f1;
+  }
+
+  button.equal {
+    background-color: #66cc66;
+    color: #fff;
+  }
+
+  .output{
+    background-color: #66cc66;
+    grid-column: 1 / -1;
+    min-height:  50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 250px;
+    flex-grow: 0;
+    overflow-x: hidden;
+}
