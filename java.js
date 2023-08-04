@@ -85,17 +85,17 @@ operatorListener.forEach(button =>
         }
     }))
 
-    function conntinueCaluclation() {
-        if (x !== "" && y !== "" && operator !== "") {
-            operate()
-            y = ""
-            operator = ""
-        }
+function conntinueCaluclation() {
+    if (x !== "" && y !== "" && operator !== "") {
+        operate()
+        y = ""
+        operator = ""
     }
-    
+}
 
 
-    equalListener.addEventListener("click", operate)
+
+equalListener.addEventListener("click", operate)
 
 function operate() {
     let num1 = parseFloat(x);
@@ -113,10 +113,10 @@ function operate() {
         } else {
             result = "Error: Can not divied by zero";
             updateCurrentDisplay(result);
-            setTimeout(clear, 1500); 
+            setTimeout(clear, 1500);
             return;
         }
-    } 
+    }
 
     updateCurrentDisplay(result);
 
@@ -124,4 +124,6 @@ function operate() {
     y = "";
     operator = "";
 }
+
+
 

@@ -62,17 +62,18 @@ button.equal {
 
 }
 
-@font-face {
-    font-family: 'pix';
 
-    src: url(/summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf) format('truetype');
-
-}
 
 h1{
     font-family: "pix", sans-serif;
     size: 30px;
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 119px;
+}
+
+@font-face {
+    font-family: "pix";
+    src: url("/summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf") format('truetype');
+
 }
